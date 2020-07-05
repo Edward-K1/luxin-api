@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
+    'luxinuser',
+    'schemas',
 ]
 
 MIDDLEWARE = [
@@ -121,5 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 GRAPHENE = {
-    'SCHEMA':'django_root.schema.schema'
+    'SCHEMA':'schemas.schema.schema'
 }

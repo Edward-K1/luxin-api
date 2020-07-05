@@ -4,4 +4,4 @@ class LuxinUser(User):
 
     class Meta:
         proxy = True
-        ordering = ('firstname',)
+        ordering = ('first_name',)
