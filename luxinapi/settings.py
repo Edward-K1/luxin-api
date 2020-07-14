@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
-    'schemas',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -122,5 +122,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 GRAPHENE = {
-    'SCHEMA':'schemas.schema.schema'
+    'SCHEMA':'api.schema.schema'
 }

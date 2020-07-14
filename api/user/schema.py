@@ -1,6 +1,6 @@
 import graphene
 from graphene_django.types import DjangoObjectType
-from schemas.models import LuxinUser
+from api.models import LuxinUser
 
 class LuxinUserType(DjangoObjectType):
     class Meta:

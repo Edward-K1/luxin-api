@@ -1,7 +1,7 @@
 from graphene import relay, ObjectType
 from graphene_django.types import DjangoObjectType
 from graphene_django.filter import DjangoFilterConnectionField
-from schemas.models import Assessment, Question, QuestionAndAnswer, Answer
+from api.models import Assessment, Question, Answer
 
 
 class AssessmentNode(DjangoObjectType):
@@ -16,7 +16,7 @@ class AssessmentNode(DjangoObjectType):
 class QuestionNode(DjangoObjectType):
     class Meta:
         model = Question
-        filter_fields = ['text', 'assessment']
+        filter_fields = ['text', 'assessment','time']
         interfaces = (relay.Node, )
 
 

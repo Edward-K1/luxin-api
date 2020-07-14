@@ -30,6 +30,7 @@ class Assessment(models.Model):
 class Question(models.Model):
     assessment = models.ForeignKey(Assessment, on_delete=models.CASCADE)
     text = models.CharField(max_length=200)
+    time = models.IntegerField(default=20) # seconds
 
     def __str__(self):
         return self.text
